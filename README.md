@@ -7,7 +7,7 @@ Instructions:
 
 `pip install selenium`
 
-`pip install pyautogui`
+`pip install pyautogui==0.9.50`
 
 Edit your credentials, and friends amount at the setting file.
 
