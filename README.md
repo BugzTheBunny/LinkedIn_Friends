@@ -1,4 +1,4 @@
-# LinkedIn_Friends
+# LinkedIn_Friends (Currently under serious building and fixing to make it faster and more dependless).
 
 This script allows you to add friends automatically on linkedIn. 
 
