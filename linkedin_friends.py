@@ -1,8 +1,9 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from settings import CHROME_PATH, username, password, MOBILE_UA, amount_of_people_to_add
 import pyautogui
 import time
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+from settings import CHROME_PATH, username, password, MOBILE_UA, amount_of_people_to_add
 
 
 def main():
@@ -20,15 +21,17 @@ def main():
 
     try:
         driver.get('https://www.linkedin.com/mynetwork/')
-        time.sleep(2)
+        time.sleep(3)
+        try:
+            driver.find_element_by_xpath('//*[@id="app-upsell-container"]/button').click()
+        except:
+            pass
         for i in range(amount_of_people_to_add):
             btn_location = pyautogui.locateOnScreen('btn_img.PNG')
             pyautogui.click(btn_location)
             print(f'Sent a connection request => #{i}')
-            pyautogui.keyDown('down')
-            pyautogui.keyDown('down')
-            pyautogui.keyDown('down')
-
+            for scroll in range(3):
+                pyautogui.keyDown('down')
     except:
         pass
     driver.quit()
