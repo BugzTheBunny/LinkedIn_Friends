@@ -1,5 +1,8 @@
 # LinkedIn_Friends
 
+This script allows you to add friends automatically on linkedIn. 
+
+
 Instructions:
 
 `pip install selenium`
