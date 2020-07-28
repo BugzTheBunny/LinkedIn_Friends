@@ -28,10 +28,12 @@ def main():
             pass
         for i in range(amount_of_people_to_add):
             btn_location = pyautogui.locateOnScreen('btn_img.PNG')
-            pyautogui.click(btn_location)
-            print(f'Sent a connection request => #{i}')
-            for scroll in range(3):
-                pyautogui.keyDown('down')
+            if btn_location:
+                pyautogui.click(btn_location)
+                print(f'Sent a connection request => #{i}')
+            else:
+                for scroll in range(20):
+                    pyautogui.keyDown('down')
     except:
         pass
     driver.quit()
