@@ -23,7 +23,7 @@ def main():
         driver.get('https://www.linkedin.com/mynetwork/')
         time.sleep(3)
         try:
-            driver.find_element_by_xpath('//*[@id="app-upsell-container"]/button').click()
+            driver.find_element_by_xpath('//*[@id="app-container"]/button').click()
         except:
             pass
         for i in range(amount_of_people_to_add):
