@@ -1,6 +1,6 @@
 # LinkedIn connections automated.
 
-This simple and short script will automate your connections on LinkedIn.
+This simple and short script will automate your adding connections on LinkedIn, for example if you want to get ☕, and add connections in the same time.
 
 ----
 **⚠️ THE USAGE OF THIS IS YOUR RESPONSIBILITY ONLY, IM NOT RESPONSIBLE IF YOUR ACCOUND GETS LOCKED OR BANNED FOR SOMETIME.**
